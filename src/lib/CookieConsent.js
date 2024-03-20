@@ -1,27 +1,17 @@
-import InsertScriptFilter from './InsertScriptFilter';
-import ScriptTagFilter from './ScriptTagFilter';
-import WrapperFilter from './WrapperFilter';
-import LocalCookieFilter from './LocalCookieFilter';
-import Interface from './Interface';
-import Configuration from './Configuration';
-import RemoveCookies from './RemoveCookies';
+// import WrapperFilter from "./WrapperFilter";
+import Interface from "./Interface";
+import Configuration from "./Configuration";
+// import RemoveCookies from "./RemoveCookies";
 
 export default class CookieConsent {
-
   init(configObject) {
     new Configuration(configObject);
 
-    const removeCookies = new RemoveCookies();
-    const insertScriptFilter = new InsertScriptFilter();
-    const scriptTagFilter = new ScriptTagFilter();
-    const wrapperFilter = new WrapperFilter();
-    const localCookieFilter = new LocalCookieFilter();
+    // const removeCookies = new RemoveCookies();
+    //const wrapperFilter = new WrapperFilter();
 
-    removeCookies.init();
-    insertScriptFilter.init();
-    scriptTagFilter.init();
-    wrapperFilter.init();
-    localCookieFilter.init();
+    // removeCookies.init();
+    // wrapperFilter.init();
 
     const UI = new Interface();
 
@@ -29,5 +19,4 @@ export default class CookieConsent {
       UI.addEventListeners();
     });
   }
-
 }

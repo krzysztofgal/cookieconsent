@@ -1,5 +1,7 @@
 # Cookieconsent Script
 
+> Warning: This fork is (VERY) stripped down script - use [the original one](https://github.com/brainsum/cookieconsent).
+
 A script that displays a cookie consent message as required by EU regulation (GDPR). The plugin displays a message on the user's first visit and they have the ability to consent to different categories of cookies and services.
 
 See the demo: [Cookieconsent](https://brainsum.github.io/cookieconsent/)
@@ -211,7 +213,7 @@ The script is being controlled mainly by a configuration object which is passed 
       } else {
         gtag('consent', 'default', JSON.parse(localStorage.getItem('consentMode')));
       }
-      
+
     (function(w,d,s,l,i){
       w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
